@@ -1,0 +1,9 @@
+# nested loop - A loop within another loop (outer, inner)
+# outer loop:
+#   inner loop:
+
+rows = int(input("Enter the number of rows: "))
+
+for i in range (0, rows):
+    for j in range(0, rows-1):
+        print(f"{i} "* j)

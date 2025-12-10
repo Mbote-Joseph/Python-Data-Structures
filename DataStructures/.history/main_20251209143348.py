@@ -1,0 +1,9 @@
+# [12,34,56,77,89,23,45,56]
+
+
+def linear_search(n, arr):
+    for i in arr:
+        if arr[i] == n:
+            return i
+        else:
+            return -1
