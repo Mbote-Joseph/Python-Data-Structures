@@ -3,15 +3,23 @@ class Queue:
         self.queue = list()
         
     def isFull(self):
-        return len(self.queue) == 7
+        if len(self.queue) == 7:
+            print("The Queue is Full")
+            return True
+        else:
+            return False
         
     
     def isEmpty(self):
-        return len(self.queue) == 0
+        if len(self.queue) == 0:
+            print("The Queue is Empty")
+            return True
+        else:
+            return False
     
     def add(self, data):
         if not self.isFull():
-            self.queue.append(data)
+            self.queue.insert(0,data)
             return self.queue
         else:
             print("The Queue is Already Full.")
