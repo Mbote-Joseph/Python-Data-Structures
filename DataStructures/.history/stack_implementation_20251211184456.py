@@ -53,10 +53,7 @@ my_stack.add(90)
 my_stack.add(40)
 my_stack.add(50)
 my_stack.add(80)
-my_stack.add(140)
-my_stack.add(150)
-my_stack.add(180)
-my_stack.add(190)
+
 my_stack.print_stack()
 print(my_stack.peek())
 
