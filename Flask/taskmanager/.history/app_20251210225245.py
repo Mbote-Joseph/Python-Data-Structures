@@ -51,6 +51,7 @@ def delete(id):
 @app.route('/update/<int:id>', methods=['GET','POST'])
 def update(id):
     task_to_update = Todo.query.get_or_404(id)
+    print(task_to_update)
     if request.method == 'POST':
         task_to_update.content = request.form['content']
     else:
